@@ -13,13 +13,3 @@ main:addi $2,$0,5
      addi $2,$0,1
      syscall
      
-     addi $4,$0,'\n'
-     addi $2,$0,11
-     syscall
-     
-     addi $4,$0,'A'
-     addi $2,$0,11
-     syscall
-     
-     addi $2,$0,10
-     syscall
