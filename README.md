@@ -9,7 +9,7 @@ main: addi $8,$0,5
 
 ```
 
-<center> <h3> Questao 1</h3> </center>
+<center> <h3> Questao aula</h3> </center>
 
 ```assembly
 main: addi $8,$0,6
@@ -20,7 +20,4 @@ main: addi $8,$0,6
       add $20,$20,$10
       add $20,$20,$11
 ```
-
-
-
 
