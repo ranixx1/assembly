@@ -1,6 +1,9 @@
-# <center> RESUMÃO DE APOIO <center>
+<div align="center">
 
-<center> <h4> SOMA </h4> <center>
+<h1>RESUMÃO DE APOIO</h1>
+
+<h4>SOMA</h4>
+</div>
 
 ```assembly
 .text
@@ -8,10 +11,11 @@
 main: addi $8,$0,5 # soma 0 com 5 e adiciona no registrador 8
       addi $9,$0,6 # soma 0 com 6 e adiciona no registrador 9
       add $10,$8,$9 # soma os valores armazenados nos registradores
-
 ```
 
-<center> <h4> Questao aula</h4> <center>
+<div align="center">
+<h4>Questao aula</h4>
+</div>
 
 ```assembly
 main: addi $8,$0,6
@@ -23,12 +27,12 @@ main: addi $8,$0,6
       add $20,$20,$11
 ```
 
-<center> <h3>Syscall</h3>
-
-<h4> Soma com duas entradas</h4> <center>
+<div align="center">
+<h3>Syscall</h3>
+<h4>Soma com duas entradas</h4>
+</div>
 
 ```assembly
-
 .text
 
 main:
@@ -49,10 +53,11 @@ main:
     add $4, $0, $10     # Move o resultado (de $t2) para $a0 ($4) para impressão
     addi $2, $0, 1      # Carrega o código da syscall 1 (print_int) em $v0
     syscall             # Executa a syscall, imprimindo o valor de $a0
-
-
 ```
-<center> <h4> Quadrado de um número </h4> <center>
+
+<div align="center">
+<h4>Quadrado de um número</h4>
+</div>
 
 ```assembly
 .text
@@ -66,10 +71,11 @@ main: addi $2,$0,5
       add $4, $0, $10   # Cria uma cópia do reg 10 para o reg 4
       addi $2,$0,1
       syscall
-
 ```
 
-<center> <h4> Média de dois números </h4> <center>
+<div align="center">
+<h4>Média de dois números</h4>
+</div>
 
 ```assembly
 .text
@@ -90,10 +96,4 @@ main: addi $2,$0,5
       add $4,$0,$10
       addi $2,$0,1
       syscall     
-
-
 ```
-
-
-
-
