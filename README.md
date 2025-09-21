@@ -69,5 +69,31 @@ main: addi $2,$0,5
 
 ```
 
+<center> <h4> Média de dois números </h4> </center>
+
+```assembly
+.text
+main: addi $2,$0,5
+      syscall
+      add $8,$0,$2
+
+      addi $2,$0,5
+      syscall
+      add $9, $0, $2
+
+      addi $7,$0,2
+      add $10,$8,$9
+
+      div $10,$7
+      mflo $10
+
+      add $4,$0,$10
+      addi $2,$0,1
+      syscall     
+
+
+```
+
+
 
 
