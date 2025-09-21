@@ -1,6 +1,6 @@
-# <center> RESUMÃO DE APOIO
+# <center> RESUMÃO DE APOIO <center>
 
-<center> <h4> SOMA </h4> </center>
+<center> <h4> SOMA </h4> <center>
 
 ```assembly
 .text
@@ -11,7 +11,7 @@ main: addi $8,$0,5 # soma 0 com 5 e adiciona no registrador 8
 
 ```
 
-<center> <h4> Questao aula</h4> </center>
+<center> <h4> Questao aula</h4> <center>
 
 ```assembly
 main: addi $8,$0,6
@@ -25,7 +25,7 @@ main: addi $8,$0,6
 
 <center> <h3>Syscall</h3>
 
-<h4> Soma com duas entradas</h4> </center>
+<h4> Soma com duas entradas</h4> <center>
 
 ```assembly
 
@@ -52,7 +52,7 @@ main:
 
 
 ```
-<center> <h4> Quadrado de um número </h4> </center>
+<center> <h4> Quadrado de um número </h4> <center>
 
 ```assembly
 .text
@@ -69,7 +69,7 @@ main: addi $2,$0,5
 
 ```
 
-<center> <h4> Média de dois números </h4> </center>
+<center> <h4> Média de dois números </h4> <center>
 
 ```assembly
 .text
