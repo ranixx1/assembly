@@ -98,3 +98,19 @@ main: addi $2,$0,5
       addi $2,$0,1
       syscall     
 ```
+
+<div align="center">
+<h4>Principais serviços</h4>
+</div>
+
+```text
+
+1 - imprime valor do $4
+5 - lê inteiros do $2
+10 - fim da execução
+11 - imprimir um char do $4
+12 - ler um char do $2
+
+
+
+```
