@@ -4,13 +4,10 @@ main:
     addi $1, $0, 'H'
     addi $13, $0, 'E'
     addi $3, $0, 'L'
-    addi $4, $0, 'L'
     addi $5, $0, 'O'
     addi $6, $0, ' '
     addi $7, $0, 'W'
-    addi $8, $0, 'O'
     addi $9, $0, 'R'
-    addi $10, $0, 'L'
     addi $11, $0, 'D'
 
     # Imprimir um por um usando syscall 11 (print_char)
@@ -28,7 +25,7 @@ main:
     syscall
 
     addi $2, $0, 11
-    add $4, $0, $4
+    add $4, $0, $3
     syscall
 
     addi $2, $0, 11
@@ -44,7 +41,7 @@ main:
     syscall
 
     addi $2, $0, 11
-    add $4, $0, $8
+    add $4, $0, $5
     syscall
 
     addi $2, $0, 11
@@ -52,7 +49,7 @@ main:
     syscall
 
     addi $2, $0, 11
-    add $4, $0, $10
+    add $4, $0, $3
     syscall
 
     addi $2, $0, 11
