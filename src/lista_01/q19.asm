@@ -5,12 +5,16 @@ main:  addi $2, $0, 5
        add $8, $0, $2
        
        addi $9, $0, 8
+
+       # divide o número do mês por 8
        div $8, $9
        
        mflo $10
        
+       #soma o quociente com o mês digitado
        add $11, $8, $10
-       
+
+       #verifica paridade       
        andi $12, $11, 1  
        
        addi $4, $12, 30
