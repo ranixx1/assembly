@@ -15,9 +15,9 @@ main:  addi $2, $0, 5
        add $11, $8, $10
 
        #verifica paridade       
-       andi $12, $11, 1  
+       andi $12, $11, 1  #0 se for par, e 1 se for impar
        
-       addi $4, $12, 30
+       addi $4, $12, 30 # soma 30 + 0 ou 1
        addi $2, $0, 1
        syscall
        
