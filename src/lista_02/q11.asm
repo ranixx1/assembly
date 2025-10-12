@@ -41,16 +41,16 @@ check_neg:
     beq $11, $0, nao
     beq $12, $0, nao
     # P-
-    addi $4, $0, 80     # 'P'
+    addi $4, $0, 'P'     # 'P'
     addi $2, $0, 11
     syscall
-    addi $4, $0, 45     # '-'
+    addi $4, $0, '-'     # '-'
     addi $2, $0, 11
     syscall
     j fim
 
 nao:
-    addi $4, $0, 78     # 'N'
+    addi $4, $0, 'N'     # 'N'
     addi $2, $0, 11
     syscall
 

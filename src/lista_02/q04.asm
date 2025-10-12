@@ -15,7 +15,7 @@ main:
 
     # Testa se A < B
     slt $10,$8,$9    # se A<B → $10=1
-    bne $10,$0,menor
+    bne $10,$0,menorA
 
     # Se não é menor nem igual → é maior
 maior:
@@ -24,7 +24,7 @@ maior:
     addi $2,$0,1
     syscall
     # imprime '>'
-    addi $4,$0,62
+    addi $4,$0,'>'
     addi $2,$0,11
     syscall
     # imprime B
@@ -33,13 +33,13 @@ maior:
     syscall
     j fim
 
-menor:
+menorA:
     # imprime A
     add $4,$8,$0
     addi $2,$0,1
     syscall
     # imprime '<'
-    addi $4,$0,60
+    addi $4,$0,'<'
     addi $2,$0,11
     syscall
     # imprime B
@@ -54,7 +54,7 @@ iguais:
     addi $2,$0,1
     syscall
     # imprime '='
-    addi $4,$0,61
+    addi $4,$0,'='
     addi $2,$0,11
     syscall
     # imprime B
