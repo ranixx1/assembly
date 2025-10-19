@@ -170,3 +170,25 @@ fim:
     syscall
 
 ```
+
+<div align="center">
+<h4>Estrutura de um laço</h4>
+</div>
+
+```assembly
+
+.text
+main: addi $8, $0, 0      # contador = 0
+      addi $9, $0, 5      # limite = 5
+
+loop:  # início do laço
+      # --- corpo do laço ---
+      addi $8, $8, 1      # contador += 1
+
+      bne $8, $9, loop    # se contador != limite, volta pro loop
+
+      # --- fim ---
+      addi $10, $0, 10
+      syscall
+      
+```
